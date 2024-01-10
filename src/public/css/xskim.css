@@ -1,0 +1,43 @@
+.xskim-body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    height: 2px;
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #e0e0e0;
+}
+
+img {
+    pointer-events: none;
+}
+
+.xskim-menu_openapp-list {
+    margin: 0px;
+    padding: 0px 16px;
+}
+
+.onlyone-btn0 {
+    width: 100%;
+    border: none;
+    margin: 0px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #8080ff;
+    padding: 8px 8px;
+}
+
+#server_list div {
+    padding: 8px;
+    margin: 4px;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+}

@@ -1,0 +1,40 @@
+{
+  "name": "xeonsky-im",
+  "version": "0.1.0",
+  "description": "xeonsky im c/b/s",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "electron": "^23.2.0",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "productName": "XeonSky IM",
+    "appId": "top.xeonsky.im",
+    "extraResources": {
+      "from": "./config.json"
+    },
+    "win": {
+      "icon": "icon.png",
+      "artifactName": "xeonsky-im-${version}.${ext}",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "nodejs-websocket": "^1.7.2",
+    "uuid": "^9.0.0"
+  }
+}

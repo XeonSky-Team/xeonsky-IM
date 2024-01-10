@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>XeonSky IM 离线版</title>
+    <link rel="stylesheet" href="./css/xskim.css" />
+    <link rel="stylesheet" href="./css/xskim-gui.css" />
+    <link rel="stylesheet" href="./css/xskim-message.css" />
+    <link rel="stylesheet" href="./css/xskim-color.css" />
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/list.js"></script>
+    <script src="./js/websocket.js"></script>
+</head>
+
+<body class="xskim-body">
+    <div class="xskim-gui_alert" id="xskim-alert"></div>
+    <div class="xskim-gui_main">
+        <div id="gui-menu" class="xskim-gui_menu">
+            <div class="xskim-gui_menubar">
+                <div class="header">
+                    <div class="icon" title="菜单" onclick="menu_toggle()">
+                        <img width="28px" height="28px" src="./icon/hamburger-button.svg">
+                    </div>
+                </div>
+                <div class="body" id="gui-menubar">
+                </div>
+            </div>
+            <div class="xskim-gui_menuinf">
+                <div class="header">
+                    <div class="logo">XeonSky IM</div>
+                </div>
+                <div class="body" id="gui-menuinf">
+                </div>
+            </div>
+        </div>
+        <div class="xskim-gui_content">
+            <div class="xskim-gui_navbar">
+                <div class="icon" title="菜单" onclick="menu_toggle()">
+                    <img width="28px" height="28px" src="./icon/hamburger-button.svg">
+                </div>
+                <div class="header">
+                    <div class="title" id="xskin_navbar_title">默认频道</div>
+                </div>
+            </div>
+            <div class="xskim-gui_window" id="gui-window">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

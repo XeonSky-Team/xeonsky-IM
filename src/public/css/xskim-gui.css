@@ -1,0 +1,210 @@
+.xskim-gui_main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: var(--text-main);
+    font-size: 14px;
+    background-color: var(--gui-main);
+}
+
+.xskim-gui_menu {
+    width: 48px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    transition: width 0.5s;
+    border-right: 1px solid var(--border-main);
+    background-color: var(--background-main);
+    background-color: transparent();
+}
+
+.xskim-gui_menu.active {
+    width: 300px;
+}
+
+@media (max-width: 800px) {
+    .xskim-gui_menu.active {
+        width: 240px;
+    }
+}
+
+@media (max-width: 600px) {
+    .xskim-gui_menu {
+        width: 0px;
+        border: 0px;
+    }
+
+    .xskim-gui_menu.active {
+        width: 100%;
+        top: 0px;
+        border: 1px;
+        z-index: 999999999999;
+        position: absolute;
+    }
+}
+
+.xskim-gui_content {
+    flex: 1;
+    height: 100%;
+}
+
+.xskim-gui_menubar {
+    width: 48px;
+    height: 100%;
+    background-color: var(--background-main);
+}
+
+.xskim-gui_menubar .header {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    border-bottom: 1px solid var(--border-main);
+}
+
+.xskim-gui_menubar .icon {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+    margin: 2px;
+    user-select: none;
+    border-radius: 4px;
+    background-color: var(--background-main);
+}
+
+.xskim-gui_menubar .icon:hover {
+    background-color: var(--button-h-main);
+}
+
+.xskim-gui_menubar .body {
+    width: 40px;
+    height: calc(100% - 49px);
+    padding: 4px;
+    overflow: auto;
+}
+
+.xskim-gui_menubar .item {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+    margin: 4px 2px;
+    user-select: none;
+    background-color: var(--background-main);
+    box-shadow: 0px 0px 1px var(--border-main);
+    border-bottom: 2px solid var(--border-main);
+    border-radius: 4px;
+}
+
+.xskim-gui_menubar .item:hover {
+    background-color: var(--button-h-main);
+}
+
+.xskim-gui_menubar .item:active {
+    box-shadow: 0px 0px 2px var(--border-main) inset;
+    border-top: 2px solid var(--border-main);
+    border-bottom: 1px none var(--border-main);
+    background-color: var(--button-h-main);
+}
+
+.xskim-gui_menubar .item.active {
+    box-shadow: 0px 0px 2px var(--border-main) inset;
+    border-top: 2px solid var(--border-main);
+    border-bottom: 1px none var(--border-main);
+    background-color: var(--button-h-main);
+    background-color: var(--button-main);
+}
+
+.xskim-gui_menuinf {
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+    border-left: 1px solid var(--border-main);
+    background-color: var(--background-main);
+}
+
+.xskim-gui_menuinf .header {
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid var(--border-main);
+}
+
+.xskim-gui_menuinf .logo {
+    color: var(--logo-main);
+    font-size: 18px;
+    /* font-weight: bold; */
+    user-select: none;
+    padding: 8px 16px;
+    line-height: 32px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.xskim-gui_navbar {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    background-color: var(--background-main);
+    border-bottom: 1px solid var(--border-main);
+}
+
+.xskim-gui_navbar .icon {
+    height: 28px;
+    padding: 10px;
+}
+@media (min-width:601px) {
+    .xskim-gui_navbar .icon {
+        display: none;
+    }
+}
+
+.xskim-gui_navbar .header {
+    height: 40px;
+    padding: 4px;
+}
+
+.xskim-gui_navbar .title {
+    height: 24px;
+    user-select: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.xskim-gui_menubar .body {
+    width: 40px;
+    height: calc(100% - 49px);
+    padding: 4px;
+    overflow: auto;
+}
+
+.xskim-gui_window {
+    height: calc(100% - 49px);
+    position: relative;
+    background-color: var(--background-main);
+}
+
+.xskim-gui_window-unit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--background-main);
+}
+
+.xskim-gui_alert{
+    top: 2%;
+    left: 2%;
+    width: calc(96% - 24px);
+    height: calc(96% - 16px);
+    padding: 8px 12px;
+    line-height: 24px;
+    max-width: 200px;
+    max-height: 24px;
+    position: fixed;
+    font-size: 14px;
+    border-radius: 4px;
+    z-index: 999999999999;
+    color: #f0f0f0;
+    display: none;
+    background-color: #2e2e2e;
+}
